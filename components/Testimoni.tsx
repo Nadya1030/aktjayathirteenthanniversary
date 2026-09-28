@@ -20,7 +20,7 @@ const testimonials = [
     name: 'Trystania Nabila',
     role: 'Probies',
     quote: 'Hii aktjayaa, with me tania from igv 26.27, my best part of AA is when we get the bounding time in bingo last year, from it we can knowing each other closer and makes new friends or relation thoroughout current member and alumni. But one thing that makes aktjaya interested for joining iss, it was my first time aiesec event, well as probies at that time im so excited for it 🤩 and in fact that was so cool and fun, worth to try.',
-    avatar: '/images/testimoni/tania.jpeg',
+    avatar: '/images/testimoni/tania.JPEG',
   },
 ];
 
