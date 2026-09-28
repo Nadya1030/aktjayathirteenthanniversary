@@ -10,7 +10,6 @@ const contacts: Contact[] = [
 const partners = [
   '/images/partners/JoeandJoy.jpeg',
   '/images/partners/Somethinc.PNG',
-  '/images/partner-3.png',
 ];
 
 export default function ContactUs() {

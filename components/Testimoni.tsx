@@ -5,28 +5,22 @@ import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Jesika Tan',
+    name: 'Muhammad Rafi Al-Azhim',
     role: 'Alumni',
-    quote: 'Acara ini selalu jadi momen paling berkesan tiap tahunnya. Kebersamaan dan kehangatannya selalu kerasa banget!',
-    avatar: '/images/testi-jesika.jpg',
+    quote: 'Attending Aktjaya Anniversary has always been a meaningful experience for me. It’s more than just an anniversary celebration, it’s a moment to reconnect with friends, meet new people, and look back on the memories and journey we’ve shared together through Aktjaya. What makes it special is the feeling of coming back to a place where so many memories were created. I’m grateful to have been part of that journey, and I hope Aktjaya continues to grow, create meaningful connections, and bring people together for many more years to come. Happy 13th Anniversary, Aktjaya!',
+    avatar: '/images/testimoni/rafi.jpeg',
   },
   {
-    name: 'Risky Andrean',
+    name: 'Safa Awaliya',
     role: 'Current Member',
-    quote: 'Seru banget bisa kumpul lagi sama alumni dan teman-teman magang. Banyak insight baru yang didapet!',
-    avatar: '/images/testi-risky.jpg',
+    quote: 'Seru banget bisa reconnect sama alumni dan current. Always feels like coming home!! 🤩😻!',
+    avatar: '/images/testimoni/safa.jpeg',
   },
   {
-    name: 'Amanda Putri',
-    role: 'Alumni',
-    quote: 'Networking dan suasana acaranya bener-bener dapet banget. Gak pernah nyesel buat hadir tiap tahun!',
-    avatar: '/images/testi-amanda.jpg',
-  },
-  {
-    name: 'Bima Santoso',
-    role: 'Current Member',
-    quote: 'Konsep bohemian tahun ini keren banget! Dekorasi sama rundown acaranya disiapin matang.',
-    avatar: '/images/testi-bima.jpg',
+    name: 'Trystania Nabila',
+    role: 'Probies',
+    quote: 'Hii aktjayaa, with me tania from igv 26.27, my best part of AA is when we get the bounding time in bingo last year, from it we can knowing each other closer and makes new friends or relation thoroughout current member and alumni. But one thing that makes aktjaya interested for joining iss, it was my first time aiesec event, well as probies at that time im so excited for it 🤩 and in fact that was so cool and fun, worth to try.',
+    avatar: '/images/testimoni/tania.jpeg',
   },
 ];
 
@@ -45,7 +39,6 @@ export default function Testimoni() {
   };
 
   return (
-    // Background section diubah jadi putih bersih (bg-white)
     <section id="testimoni" className="py-20 px-4 md:px-12 bg-white overflow-hidden">
       <Reveal>
         <div className="text-center mb-12">
@@ -57,7 +50,7 @@ export default function Testimoni() {
       {/* Container Utama */}
       <div className="max-w-6xl mx-auto relative px-2 md:px-8">
         
-        {/* TOMBOL PANAH KIRI (Kontras diperjelas dengan background terracotta/cokelat) */}
+        {/* TOMBOL PANAH KIRI */}
         <button
           onClick={() => scroll('left')}
           className="hidden md:flex absolute -left-2 lg:-left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 items-center justify-center rounded-full bg-terracotta text-white shadow-xl hover:bg-brown hover:scale-110 active:scale-95 transition-all cursor-pointer border-2 border-white"
@@ -66,7 +59,7 @@ export default function Testimoni() {
           <ChevronLeft size={24} />
         </button>
 
-        {/* TOMBOL PANAH KANAN (Kontras diperjelas dengan background terracotta/cokelat) */}
+        {/* TOMBOL PANAH KANAN */}
         <button
           onClick={() => scroll('right')}
           className="hidden md:flex absolute -right-2 lg:-right-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 items-center justify-center rounded-full bg-terracotta text-white shadow-xl hover:bg-brown hover:scale-110 active:scale-95 transition-all cursor-pointer border-2 border-white"
@@ -78,7 +71,7 @@ export default function Testimoni() {
         {/* AREA CAROUSEL HORIZONTAL */}
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none py-6 px-4 touch-pan-x"
+          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none py-10 px-4 touch-pan-x"
           style={{ 
             scrollbarWidth: 'none', 
             msOverflowStyle: 'none',
@@ -88,11 +81,11 @@ export default function Testimoni() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="snap-center shrink-0 w-[82%] sm:w-[320px] md:w-[350px] relative pt-10"
+              className="snap-center shrink-0 w-[88%] sm:w-[360px] md:w-[400px] relative pt-14"
             >
-              {/* FOTO PROFIL LINGKARAN */}
+              {/* FOTO PROFIL LINGKARAN (Diperbesar) */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20">
-                <div className="w-20 h-20 rounded-full p-1 bg-terracotta/20 backdrop-blur-xs">
+                <div className="w-28 h-28 rounded-full p-1 bg-terracotta/20 backdrop-blur-xs shadow-lg">
                   <img
                     src={t.avatar}
                     alt={t.name}
@@ -101,36 +94,36 @@ export default function Testimoni() {
                 </div>
               </div>
 
-              {/* CARD TESTIMONI (Warna diubah ke bg-[#FAF7F2] agar hangat & manis di atas bg-white) */}
-              <div className="bg-[#FAF7F2] rounded-3xl pt-12 pb-8 px-6 border border-brown/10 text-center relative z-10 h-full flex flex-col justify-between">
+              {/* CARD TESTIMONI */}
+              <div className="bg-[#FAF7F2] rounded-3xl pt-16 pb-8 px-6 border border-brown/10 text-center relative z-10 h-full flex flex-col justify-between shadow-xs">
                 
                 <div>
                   {/* RATING BINTANG */}
-                  <div className="flex justify-center gap-1 text-terracotta mb-3">
+                  <div className="flex justify-center gap-1 text-terracotta mb-4">
                     {[...Array(5)].map((_, idx) => (
-                      <Star key={idx} size={15} fill="currentColor" stroke="none" />
+                      <Star key={idx} size={18} fill="currentColor" stroke="none" />
                     ))}
                   </div>
 
-                  {/* TEKS QUOTE */}
-                  <p className="font-serif italic text-base text-brown/90 leading-relaxed px-1">
+                  {/* TEKS QUOTE (Ukuran font diperbesar) */}
+                  <p className="font-serif italic text-base md:text-lg text-brown/90 leading-relaxed px-2">
                     "{t.quote}"
                   </p>
                 </div>
 
                 <div>
                   {/* GARIS PEMISAH */}
-                  <div className="w-12 h-px bg-brown/15 mx-auto my-4" />
+                  <div className="w-16 h-px bg-brown/15 mx-auto my-5" />
 
-                  {/* NAMA & ROLE */}
-                  <p className="font-serif font-semibold text-lg text-brown">{t.name}</p>
-                  <p className="font-body text-xs tracking-widest text-terracotta uppercase mt-0.5">
+                  {/* NAMA & ROLE (Diperbesar sedikit) */}
+                  <p className="font-serif font-semibold text-xl text-brown">{t.name}</p>
+                  <p className="font-body text-xs md:text-sm tracking-widest text-terracotta uppercase mt-1 font-medium">
                     {t.role}
                   </p>
                 </div>
 
                 {/* HIASAN IKON QUOTE */}
-                <Quote size={22} className="absolute bottom-4 right-5 text-brown/10 -rotate-12" />
+                <Quote size={28} className="absolute bottom-4 right-5 text-brown/10 -rotate-12" />
               </div>
             </div>
           ))}
