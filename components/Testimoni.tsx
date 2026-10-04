@@ -22,6 +22,12 @@ const testimonials = [
     quote: 'Hii aktjayaa, with me tania from igv 26.27, my best part of AA is when we get the bounding time in bingo last year, from it we can knowing each other closer and makes new friends or relation thoroughout current member and alumni. But one thing that makes aktjaya interested for joining iss, it was my first time aiesec event, well as probies at that time im so excited for it 🤩 and in fact that was so cool and fun, worth to try.',
     avatar: '/images/testimoni/tania.JPEG',
   },
+  {
+    name: 'Gusti Vatih Abiyyu Putra',
+    role: 'Current Member',
+    quote: 'Hi guys, I’m Vatih from 24.25 AFL & BA team, I was initially interested in joining the AA Event because it offered a chance to get to know our past members, and idk it felt great to be part of this "home" journey. and for the moment that really stuck with me was absolutely getting to know some of the alumni who even joined us playing, sharing stories, and laughing together. It was a wonderful experience to feel!!!',
+    avatar: '/images/testimoni/vatih.JPG',
+  },
 ];
 
 export default function Testimoni() {
@@ -42,7 +48,7 @@ export default function Testimoni() {
     <section id="testimoni" className="py-20 px-4 md:px-12 bg-white overflow-hidden">
       <Reveal>
         <div className="text-center mb-12">
-          <p className="font-script text-6xl md:text-5xl text-terracotta">Words From Them</p>
+          <p className="font-script text-6xl md:text-6xl text-terracotta">Words From Them</p>
           <BohemianDivider />
         </div>
       </Reveal>

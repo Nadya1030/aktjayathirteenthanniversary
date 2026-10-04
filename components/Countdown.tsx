@@ -46,7 +46,7 @@ export default function Closing() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
       >
-        <source src="/videos/00009.mp4" type="video/mp4" />
+        <source src="/videos/download.mp4" type="video/mp4" />
         Browser Anda tidak mendukung tag video.
       </video>
 

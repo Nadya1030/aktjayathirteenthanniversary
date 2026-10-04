@@ -10,6 +10,7 @@ const contacts: Contact[] = [
 const partners = [
   '/images/partners/JoeandJoy.jpeg',
   '/images/partners/Somethinc.PNG',
+  '/images/partners/rona.png',
 ];
 
 export default function ContactUs() {
@@ -17,7 +18,7 @@ export default function ContactUs() {
     <section id="kontak" className="py-24 px-6 md:px-12 bg-white text-center">
       {/* JUDUL UTAMA */}
       <Reveal>
-        <p className="font-script text-6xl md:text-7xl text-blue mb-12">Reach Us out!📞</p>
+        <p className="font-script text-6xl md:text-7xl text-blue mb-12">Reach Us Out!📞</p>
       </Reveal>
 
       {/* DUA KONTAK SEBELAHAN */}
@@ -75,7 +76,7 @@ export default function ContactUs() {
                 key={i}
                 src={logo}
                 alt={`Partner ${i + 1}`}
-                className="h-12 md:h-26 object-contain opacity-100 hover:opacity-100 transition-opacity"
+                className="h-22 md:h-26 object-contain opacity-100 hover:opacity-100 transition-opacity"
               />
             ))}
           </div>

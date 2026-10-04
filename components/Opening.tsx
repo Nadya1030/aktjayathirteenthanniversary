@@ -15,7 +15,7 @@ export default function Opening({ onOpen }: { onOpen: () => void }) {
       }}
     >
       {/* OVERLAY GELAP DENGAN SENTUHAN GRADIENT */}
-      <div className="absolute inset-0 bg-black/50 bg-gradient-to-b from-black/50 via-black/60 to-black/50" />
+      <div className="absolute inset-0 bg-black/40 bg-gradient-to-b from-black/40 via-black/50 to-black/40" />
 
       {/* KONTEN UTAMA - TANPA GLASS CARD */}
       <div className="relative z-10 text-white max-w-2xl mx-auto space-y-6 flex flex-col items-center">
